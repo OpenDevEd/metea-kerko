@@ -1,24 +1,26 @@
 BABEL_DEFAULT_LOCALE = "en_GB"
 
-HOME_URL = "https://opendeved.net"
-HOME_TITLE = "Open Development & Education"
+HOME_URL = "https://docs.metea.org.uk/"
+HOME_TITLE = "Mathematics Education"
+FLASK_APP = "wsgi.py"
+FLASK_DEBUG = 0
 
 [kerko.meta]
 
-title = "Evidence Library – Open Development & Education"
+title = "Evidence Library – Mathematics Education"
 google_analytics_id = "UA-169419325-2"
 
 [kerko.link_groups]
 
-    [[kerko.link_groups.breadcrumb_base]]
-    text = "Open Development & Education"
-    type = "url"
-    url = "https://opendeved.net"
+[[kerko.link_groups.breadcrumb_base]]
+text = "Mathematics Education"
+type = "url"
+url = "https://docs.metea.org.uk/"
 
-    [[kerko.link_groups.breadcrumb_base]]
-    text = "Evidence Library"
-    type = "endpoint"
-    endpoint = "kerko.search"
+[[kerko.link_groups.breadcrumb_base]]
+text = "Evidence Library"
+type = "endpoint"
+endpoint = "kerko.search"
 
 [kerko.features]
 
@@ -52,6 +54,7 @@ locale = "en-GB"
 # to the CSL style, otherwise zotero.org might still use a previously cached
 # version of the file.
 csl_style = "https://docs.opendeved.net/static/dist/csl/eth_apa.xml?202012301815"
+batch_size = 20
 
 item_exclude_re = "^_exclude$"
 
@@ -60,54 +63,25 @@ child_exclude_re = ""
 
 [kerko.facets]
 
-    [kerko.facets.tag]
-    enabled = false
+[kerko.facets.tag]
+enabled = false
 
-    [kerko.facets.link]
-    enabled = false
+[kerko.facets.link]
+enabled = false
 
-    [kerko.facets.item_type]
-    enabled = false
+[kerko.facets.item_type]
+enabled = false
 
-    [kerko.facets.featured]
-    enabled = true
-    type = "collection"
-    collection_key = "JUDM2WBF"
-    filter_key = "featured"
-    title = "Featured publisher"
-    weight = 10
-    initial_limit = 15
-    initial_limit_leeway = 5
+[kerko.facets.featured]
+enabled = true
+type = "collection"
+collection_key = "VQ8AKG3J"
+filter_key = "featured"
+title = "Country"
+weight = 10
+initial_limit = 15
+initial_limit_leeway = 5
 
-    [kerko.facets.pubtype]
-    enabled = true
-    type = "collection"
-    collection_key = "NEH6ARC4"
-    filter_key = "pubtype"
-    title = "Publication type"
-    weight = 20
-    initial_limit = 5
-    initial_limit_leeway = 2
-
-    [kerko.facets.theme]
-    enabled = true
-    type = "collection"
-    collection_key = "QK8NXPKZ"
-    filter_key = "theme"
-    title = "Theme"
-    weight = 30
-    initial_limit = 10
-    initial_limit_leeway = 2
-
-    [kerko.facets.location]
-    enabled = true
-    type = "collection"
-    collection_key = "94GNF2EB"
-    filter_key = "location"
-    title = "Location"
-    weight = 50
-    initial_limit = 5
-    initial_limit_leeway = 2
 
 [kerko.performance]
 
